@@ -1,0 +1,23 @@
+{
+    "plugins": [
+        "react"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "standard",
+        "standard-jsx",
+        "standard-react"
+    ],
+    "parser": "@babel/eslint-parser",
+    "env": {
+        "browser": true
+    },
+    "rules": {
+        "react/prop-types": "off",
+        "semi": "off"
+    }
+}

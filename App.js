@@ -1,14 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { NativeRouter } from 'react-router-native';
-import Main from './src/components/Main/Main'
+import React from 'react'
+import Main from './src/layout/Main/Main.jsx';
 
-export default function App() {
+export default function App () {
   return (
-<>
-  <StatusBar style="ligth" />
-  <NativeRouter>
-    <Main/>
-  </NativeRouter>
-</>
-  );
+    <Main />
+  )
 }
