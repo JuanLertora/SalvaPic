@@ -1,11 +1,12 @@
 import React from 'react'
 import { StatusBar, FlatList, View, StyleSheet } from 'react-native';
 import RepositoriesItem from '../RepositoriesItem/RepositoriesItem';
-import repositories from '../../../data/data';
+import useRepositories from '../../../hooks/useRepositories';
 
 const ItemSeparator = () => <View style={styles.separator} />
 
 const RepositoryList = () => {
+  const { repositories } = useRepositories()
   return (
     <FlatList
       data={repositories}
